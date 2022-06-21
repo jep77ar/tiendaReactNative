@@ -1,5 +1,5 @@
 import { NavigationContainer } from "@react-navigation/native";
-import Main from "./stacks";
+import Main from "./tabs/TabNavigator";
 
 export default () => (
   <NavigationContainer>
