@@ -1,10 +1,23 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
 const GridItem = ({ item, onSelected }) => {
+  const estiloContainer = {
+    flex: 1,
+    borderRadius: 6,
+    shadowColor: "black",
+    shadowOpacity: 0.26,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 6,
+    elevation: 3,
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+    padding: 8,
+  };
+
   return (
     <View style={styles.gridItem}>
       <TouchableOpacity
-        style={{ ...styles.container, backgroundColor: item.color }}
+        style={{ ...estiloContainer, backgroundColor: item.color }}
         onPress={() => onSelected(item)}
       >
         <View>
@@ -27,15 +40,15 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     shadowColor: "black",
     shadowOpacity: 0.26,
-    shadowoffset: { width: 0, height: 2 },
+    shadowOffset: { width: 0, height: 2 },
     shadowRadius: 6,
-    elevtion: 3,
+    elevation: 3,
     justifyContent: "flex-end",
     alignItems: "flex-end",
     padding: 8,
   },
   title: {
-    fontFamiluy: "monospace",
+    fontFamily: "monospace",
     fontWeight: "bold",
   },
 });

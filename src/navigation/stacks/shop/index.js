@@ -1,11 +1,18 @@
 import { createStackNavigator } from "@react-navigation/stack";
 
-import { COLORS } from "../../../constants/colors";
-import CategoriesScreen from "../../screens/CategoriesScreen";
-import ProductDetailScreen from "../../screens/ProductDetailScreen";
-import CategoriesProductScreen from "../../screens/CategoriesProductScreen";
+import { COLORS } from "../../../../constants/colors";
+import CategoriesScreen from "../../../screens/CategoriesScreen";
+import ProductDetailScreen from "../../../screens/ProductDetailScreen";
+import CategoriesProductScreen from "../../../screens/CategoriesProductScreen";
+import { logout } from "../../../../app/api";
+import { Text, TouchableOpacity } from "react-native";
 
 const Stack = createStackNavigator();
+
+const handleSignOut = () => {
+  console.log("haciendo logout");
+  logout();
+};
 
 export default () => (
   <Stack.Navigator
@@ -16,6 +23,13 @@ export default () => (
       headerTintColor: COLORS.secondary,
       headerTitleStyle: {
         fontWeight: "bold",
+      },
+      headerRight: (props) => {
+        return (
+          <TouchableOpacity onPress={handleSignOut}>
+            <Text>Log out</Text>
+          </TouchableOpacity>
+        );
       },
     }}
   >

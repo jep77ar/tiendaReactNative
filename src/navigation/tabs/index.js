@@ -1,13 +1,13 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-import CartNavigator from "../stacks/CartNavigator";
-import ShopNavigator from "../stacks/ShopNavigator";
-import OrderNavigator from "../stacks/OrderNavigator";
+import CartNavigator from "../stacks/cart";
+import ShopNavigator from "../stacks/shop";
+import OrderNavigator from "../stacks/order";
 
 const BottomTabs = createBottomTabNavigator();
 
-export default () => (
+const TabNavigator = () => (
   <BottomTabs.Navigator
     screenOptions={{
       headerShown: false,
@@ -39,3 +39,5 @@ export default () => (
     />
   </BottomTabs.Navigator>
 );
+
+export default TabNavigator;

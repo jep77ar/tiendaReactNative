@@ -1,9 +1,16 @@
 import { createStackNavigator } from "@react-navigation/stack";
+import { Text, TouchableOpacity } from "react-native";
+import { logout } from "../../../../app/api";
 
-import { COLORS } from "../../../constants/colors";
-import OrderScreen from "../../screens/OrderScreen";
+import { COLORS } from "../../../../constants/colors";
+import OrderScreen from "../../../screens/OrderScreen";
 
 const Stack = createStackNavigator();
+
+const handleSignOut = () => {
+  console.log("haciendo logout");
+  logout();
+};
 
 export default () => (
   <Stack.Navigator
@@ -14,6 +21,13 @@ export default () => (
       headerTintColor: COLORS.secondary,
       headerTitleStyle: {
         fontWeight: "bold",
+      },
+      headerRight: (props) => {
+        return (
+          <TouchableOpacity onPress={handleSignOut}>
+            <Text>Log out</Text>
+          </TouchableOpacity>
+        );
       },
     }}
   >
