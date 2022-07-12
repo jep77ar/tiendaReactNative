@@ -1,7 +1,12 @@
 import { addDoc } from "firebase/firestore";
 import { createContext, useState } from "react";
 import { auth } from "../app/firebase";
-import { createOrder, getAllOrders } from "./services/orderApi";
+import { getCurrentUser } from "./services/authApi";
+import {
+  createOrder,
+  getAllOrders,
+  getOrdersByBuyer,
+} from "./services/orderApi";
 
 const ShopProvider = ({ children }) => {
   const [carrito, setCarrito] = useState([]);
@@ -63,7 +68,9 @@ const ShopProvider = ({ children }) => {
   };
 
   const getOrders = async () => {
-    const orders = await getAllOrders();
+    let user = await getCurrentUser();
+    console.log("en getOrders del provider", user.email);
+    const orders = await getOrdersByBuyer(user.email);
     //const orders = await getDocs(collection(db, "orders"));
     console.log("orders: ", orders);
     return orders;

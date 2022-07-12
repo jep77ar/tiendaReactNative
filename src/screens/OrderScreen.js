@@ -1,5 +1,4 @@
 import { StyleSheet, View, Text, FlatList } from "react-native";
-import { getOrders } from "../app/services/orderApi";
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../app/ShopProvider";
 

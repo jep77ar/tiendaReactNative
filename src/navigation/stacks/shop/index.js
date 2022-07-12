@@ -1,11 +1,13 @@
 import { createStackNavigator } from "@react-navigation/stack";
 
+import { TouchableOpacity } from "react-native";
+import Ionicons from "react-native-vector-icons/Ionicons";
+
 import { COLORS } from "../../../../constants/colors";
 import CategoriesScreen from "../../../screens/CategoriesScreen";
 import ProductDetailScreen from "../../../screens/ProductDetailScreen";
 import CategoriesProductScreen from "../../../screens/CategoriesProductScreen";
 import { logout } from "../../../app/services/authApi";
-import { Text, TouchableOpacity } from "react-native";
 
 const Stack = createStackNavigator();
 
@@ -27,7 +29,7 @@ export default () => (
       headerRight: (props) => {
         return (
           <TouchableOpacity onPress={handleSignOut}>
-            <Text>Log out</Text>
+            <Ionicons name="log-out-outline" size={30} color="#aac0af" />
           </TouchableOpacity>
         );
       },

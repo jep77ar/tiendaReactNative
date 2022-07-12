@@ -8,7 +8,6 @@ import { auth } from "../firebase";
 export const signUp = async (email, password) => {
   return createUserWithEmailAndPassword(auth, email, password)
     .then(async (userCredential) => {
-      hayError = false;
       console.log("En signUp1: ", userCredential);
       const user = userCredential.user;
       // await setDoc(doc(db, "users", user.uid), {});

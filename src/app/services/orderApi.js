@@ -35,9 +35,10 @@ export const getAllOrders = async () => {
 
 // READ WITH WHERE
 // Tener en cuenta que el tipo de dato de la condición debe coincidir con el tipo de dato que hay en Firebase o no obtendré un dato de respuesta
-export const getOrdersByCondition = async (value) => {
+export const getOrdersByBuyer = async (value) => {
+  console.log("en getOrdersByBuyer: ", value);
   const colRef = collection(db, "orders");
-  const result = await getDocs(query(colRef, where("age", "==", value)));
+  const result = await getDocs(query(colRef, where("buyer", "==", value)));
   return getArrayFromCollection(result);
 };
 
