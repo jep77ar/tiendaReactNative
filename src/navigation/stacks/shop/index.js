@@ -4,7 +4,7 @@ import { COLORS } from "../../../../constants/colors";
 import CategoriesScreen from "../../../screens/CategoriesScreen";
 import ProductDetailScreen from "../../../screens/ProductDetailScreen";
 import CategoriesProductScreen from "../../../screens/CategoriesProductScreen";
-import { logout } from "../../../../app/api";
+import { logout } from "../../../app/services/authApi";
 import { Text, TouchableOpacity } from "react-native";
 
 const Stack = createStackNavigator();

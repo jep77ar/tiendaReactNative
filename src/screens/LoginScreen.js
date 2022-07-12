@@ -7,7 +7,7 @@ import {
   StyleSheet,
   TextInput,
 } from "react-native";
-import { signIn } from "../../app/api";
+import { signIn } from "../app/services/authApi";
 import { COLORS } from "../../constants/colors";
 
 const AuthScreen = () => {

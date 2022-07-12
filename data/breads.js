@@ -31,4 +31,73 @@ export const BREADS = [
     weight: "900gr",
     price: 3300,
   },
+  {
+    id: 5,
+    category: 2,
+    name: "Pan de multicereales",
+    description:
+      "Este pan delicioso destaca por su sabor intenso a los cereales y semillas que recubren toda la corteza y que se encuentran presentes en la miga. Es un pan artesano que elaboramos siguiendo nuestras recetas tradicionales y manteniendo todo el sabor del pan de siempre hornado en leña. Alérgenos: Puede contener trazas de otros frutos de cáscara, huevo, pescado, cacahuetes, soja, sésamo.",
+    weight: "900gr",
+    price: 2400,
+  },
+  {
+    id: 6,
+    category: 2,
+    name: "Pan Alemán",
+    description:
+      "Pan alemán con harina de centeno, pipas de girasol, semillas de amapola, lino, copos de avena y ajonjolí, que hacen destacar este pan por su aroma, aspecto, sabor y gusto. Pan elaborado con harinas molidas a la piedra, con masa madre y larga fermentación, lo que lo convierte en pan muy saludable.",
+    weight: "750gr",
+    price: 1300,
+  },
+  {
+    id: 7,
+    category: 2,
+    name: "Pan de Maiz",
+    description:
+      "Pan de excelentes propiedades nutricionales que hacen de este pan artesano un producto saludable y muy recomendable. Pan elaborado con levadura de masa madre y larga fermentación, lo que lo convierte en pan muy saludable. Alérgenos: Puede contener trazas de otros frutos de cáscara, huevo, pescado, cacahuetes, soja, sésamo.",
+    weight: "500gr",
+    price: 800,
+  },
+  {
+    id: 8,
+    category: 3,
+    name: "Pan de Remolacha",
+    description: "Pan de masa madre saborizado con remolacha",
+    weight: "450gr",
+    price: 650,
+  },
+  {
+    id: 9,
+    category: 3,
+    name: "Pan de Garbanzos",
+    description: "Pan de masa madre saborizado con garbanzos",
+    weight: "450gr",
+    price: 650,
+  },
+  {
+    id: 10,
+    category: 3,
+    name: "Pan de Calabaza",
+    description: "Pan de masa madre saborizado con calabaza",
+    weight: "450gr",
+    price: 650,
+  },
+  {
+    id: 11,
+    category: 4,
+    name: "Muffin con chocolate",
+    description:
+      "Producto de repostería elaborado con pan dulce y pepitas de chocolate. Cocinado al horno en moldes de papel, presentan una base cilíndrica y una superficie más ancha con forma de hongo.",
+    weight: "200gr",
+    price: 20,
+  },
+  {
+    id: 12,
+    category: 4,
+    name: "Colines Stirati de aceite de oliva",
+    description:
+      "Colines de pan en forma de bastones crujientes elaborados con aceite de oliva. Todo el sabor y la tradición panadera se encuentra en estos colines, que resultan un clásico perfecto para acompañar cualquier comida. Les encantan a niños y adultos, por ser un bocado irresistible que no podrás parar !",
+    weight: "500gr",
+    price: 900,
+  },
 ];

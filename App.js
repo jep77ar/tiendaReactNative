@@ -1,5 +1,10 @@
+import ShopProvider from "./src/app/ShopProvider";
 import Navigation from "./src/navigation";
 
-const App = () => <Navigation />;
+const App = () => (
+  <ShopProvider>
+    <Navigation />
+  </ShopProvider>
+);
 
 export default App;

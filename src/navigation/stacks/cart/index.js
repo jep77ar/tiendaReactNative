@@ -1,6 +1,6 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import { TouchableOpacity, Text } from "react-native";
-import { logout } from "../../../../app/api";
+import { logout } from "../../../app/services/authApi";
 
 import { COLORS } from "../../../../constants/colors";
 import CartScreen from "../../../screens/CartScreen";

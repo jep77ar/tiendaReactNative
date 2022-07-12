@@ -1,6 +1,6 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import { Text, TouchableOpacity } from "react-native";
-import { logout } from "../../../../app/api";
+import { logout } from "../../../app/services/authApi";
 
 import { COLORS } from "../../../../constants/colors";
 import OrderScreen from "../../../screens/OrderScreen";

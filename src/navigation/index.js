@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import ShopNavigator from "./stacks/shop";
 import AuthNavigator from "./user/AuthNavigator";
 import TabNavigator from "./tabs";
-import { auth } from "./../../app/firebase";
+import { auth } from "../app/firebase";
 import { onAuthStateChanged } from "firebase/auth";
 
 const MainNavigator = () => {
