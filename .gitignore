@@ -8,7 +8,7 @@ npm-debug.*
 *.key
 *.mobileprovision
 *.orig.*
-web-build/
+##### comento para subir al netlify web-build/
 
 # macOS
 .DS_Store
